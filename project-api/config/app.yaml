@@ -1,0 +1,24 @@
+zap:
+  debugFileName: "D:\\go\\project\\project_ws\\logs\\debug\\project-debug.log"
+  infoFileName: "D:\\go\\project\\project_ws\\logs\\info\\project-info.log"
+  warnFileName: "D:\\go\\project\\project_ws\\logs\\error\\project-error.log"
+  maxSize: 500,
+  maxAge: 28,
+  MaxBackups: 3
+redis:
+  host: "localhost"
+  port: 16379
+  password: "123456"
+  db: 0
+server:
+  port: 80
+etcd:
+  addrs:
+    - "127.0.0.1:2379"
+nacos:
+  namespace: d1a5e738-d7b6-48a2-b071-b3c64123272d
+  group: dev
+  ipAddr: 127.0.0.1
+  port: 8848
+  scheme: http
+  contextPath: "/nacos"

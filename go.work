@@ -1,0 +1,11 @@
+go 1.20
+
+use ./project-user
+
+use (
+	.
+	./project-api
+	./project-common
+	./project-grpc
+	./project-project
+)

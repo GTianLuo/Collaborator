@@ -1,0 +1,41 @@
+zap:
+  debugFileName: "D:\\go\\project-project\\project_ws\\logs\\debug\\project-debug.log"
+  infoFileName: "D:\\go\\project-project\\project_ws\\logs\\info\\project-info.log"
+  warnFileName: "D:\\go\\project-project\\project_ws\\logs\\error\\project-error.log"
+  maxSize: 500,
+  maxAge: 28,
+  MaxBackups: 3
+redis:
+  host: "localhost"
+  port: 6379
+  password: "123456"
+  db: 0
+server:
+  name: "project-project"
+  addr: "127.0.0.1:8081"
+grpc:
+  addr: "127.0.0.1:8882"
+  name: "project"
+  version: "1.0.0"
+  weight: 2
+etcd:
+  addrs:
+    - "127.0.0.1:2379"
+mysql:
+  username: root
+  password: root
+  host: 127.0.0.1
+  port: 3309
+  db: ms_project
+jwt:
+  accessExp: 7
+  refreshExp: 14
+  accessSecret: msproject
+  refreshSecret: ms_project
+nacos:
+  namespace: d1a5e738-d7b6-48a2-b071-b3c64123272d
+  group: dev
+  ipAddr: 127.0.0.1
+  port: 8848
+  scheme: http
+  contextPath: "/nacos"
